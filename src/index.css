@@ -11,6 +11,7 @@ body {
   color: white;
   background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   margin-bottom: 10vw;
+  overflow-x: hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -31,10 +32,17 @@ button {
   border-radius: 4px;
   text-transform: uppercase;
 }
-
+/* 
 button:hover {
   transform: scale(1.5);
   background-color: pink;
   font-weight: 700;
   border: 1px solid;
+} */
+.css-46bh2p-MuiCardContent-root{
+  background: linear-gradient(45deg, pink,green,red,blue);
+  transition: all 250ms ease-out;
+}
+.css-46bh2p-MuiCardContent-root:hover{
+  background: linear-gradient(22deg, pink,green,red,blue);
 }

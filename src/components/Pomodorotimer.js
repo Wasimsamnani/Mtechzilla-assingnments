@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 
 function Timer() {
   const [minutes, setminutes] = useState(0);
@@ -34,7 +35,8 @@ function Timer() {
   }, [Break]);
   let seconds = minutes % 60;
   if (seconds < 10) seconds = "0" + seconds;
-  return (
+  return (<>
+    <Navbar/>
     <Container>
       <CardBoard>
         <CardTitle>
@@ -73,6 +75,7 @@ function Timer() {
         </ButtonGroup>
       </CardBoard>
     </Container>
+    </>
   );
 }
 
